@@ -18,17 +18,17 @@ const messages = [];
 
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
-
+  socket.emit("Your id", socket.id);
   // 新しいクライアントに過去のメッセージを送信
   socket.emit("previous messages", messages);
-
-  socket.on("chat message", (msg) => {
+  console.log("previous messages: ", messages);
+  socket.on("chat message", (messageObj) => {
     // メッセージをサーバー側の配列に保存
-    messages.push(msg);
+    messages.push(messageObj);
 
     // すべてのクライアントにメッセージをブロードキャスト
-    io.emit("chat message", msg);
-    console.log("chat message: ", msg);
+    io.emit("chat message", messageObj);
+    console.log("chat message: ", messageObj);
   });
 
   socket.on("disconnect", () => {

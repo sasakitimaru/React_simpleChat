@@ -27,6 +27,9 @@
 .message.you {
   text-align: right;
 }
+.message.other {
+  text-align: left;
+}
 
 form {
   display: flex;
