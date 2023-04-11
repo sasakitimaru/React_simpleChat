@@ -1,7 +1,9 @@
 import React, { useState, useEffect,useRef } from "react";
 import { io } from "socket.io-client";
 import {ChatWindow, ChatForm, } from "./source/index";
-import "./App.css";
+import RegistrationForm from "./RegistrationForm";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import style from "./source/App.module.css";
 
 function App() {
   const socketRef = useRef();
@@ -30,7 +32,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className={style.App}>
       <ChatWindow messages={messages} MyID={id}/>
       <ChatForm input={input} setInput={setInput} socketRef={socketRef} MyID={id}/>
     </div>
