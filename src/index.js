@@ -5,6 +5,7 @@ import App from './App';
 import RegistrationForm from './RegistrationForm';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import CreateNewAccount from './CreateNewAccount';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -14,6 +15,7 @@ root.render(
       <Routes>
         <Route path="/" element={<RegistrationForm/>} />
         <Route path="/app" element={<App/>} />
+        <Route path="/createnewaccount" element={<CreateNewAccount/>} />
       </Routes>
     </Router>
   </React.StrictMode>

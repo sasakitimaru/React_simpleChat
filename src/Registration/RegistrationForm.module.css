@@ -44,3 +44,19 @@
   border-radius: 6px;
   cursor: pointer;
 }
+.createAccount {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: inherit;
+  font-family: inherit;
+  margin-top: 5%;
+  padding: 0;
+  text-decoration: none;
+}
+
+.createAccount:hover {
+  opacity: 0.5;
+}

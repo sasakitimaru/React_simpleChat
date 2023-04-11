@@ -1,8 +1,8 @@
 import React, { useState, useEffect,useRef } from "react";
 import { io } from "socket.io-client";
 import {ChatWindow, ChatForm, } from "./source/index";
-import RegistrationForm from "./RegistrationForm";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import RegistrationForm from "./RegistrationForm";
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import style from "./source/App.module.css";
 
 function App() {

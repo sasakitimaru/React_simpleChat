@@ -7,14 +7,14 @@ const ChatForm = ({input,setInput,socketRef,MyID}) => {
         HandleSubmit(e,input,socketRef,setInput,MyID);
     }
     return(
-        <form className={style.form} onSubmit={handleSubmit}>
-            <input className={style.input}
+        <form className={style.formApp} onSubmit={handleSubmit}>
+            <input className={style.inputApp}
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Type your message here..."
             />
-            <button className={style.button} type="submit">Send</button>
+            <button className={style.buttonApp} type="submit">Send</button>
         </form>
     )
 }
