@@ -3,6 +3,7 @@ const http = require("http");
 const cors = require("cors");
 const { Server } = require("socket.io");
 
+
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
@@ -16,6 +17,10 @@ app.use(cors());
 // サーバー側でメッセージを保存する配列
 const messages = [];
 
+// const MessagePost =async (message) => (
+//   await axios.post(END_POINT, message)
+// );
+
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
   socket.emit("Your id", socket.id);
@@ -24,6 +29,7 @@ io.on("connection", (socket) => {
   console.log("previous messages: ", messages);
   socket.on("chat message", (messageObj) => {
     // メッセージをサーバー側の配列に保存
+    // MessagePost(messageObj);
     messages.push(messageObj);
 
     // すべてのクライアントにメッセージをブロードキャスト

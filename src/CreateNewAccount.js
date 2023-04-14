@@ -1,15 +1,14 @@
-import React from "react";
 import styles from "./CreateAccount/CreateAccount.module.css";
 
-import { TitleAndComment, CreateForm, CreateButton} from "./CreateAccount/index";
+import { TitleAndComment, CreateForm} from "./CreateAccount/index";
 
 const CreateNewAccount = () => {
-    
+
     return (
         <div class ={styles.createAccount} >
             <TitleAndComment/>
             <CreateForm/>
-            <CreateButton/>
+            {/* <CreateButton/> */}
         </div>
     );
 }

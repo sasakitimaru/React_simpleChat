@@ -1,0 +1,35 @@
+{
+  "messages": [
+    {
+      "text": "Hello, how are you?",
+      "sender": "user",
+      "time": "2019-01-01 12:00:00",
+      "id": 1
+    },
+    {
+      "text": "asda",
+      "sender": "8Vr_gQl4EfRtN-iAAAAC",
+      "id": 2
+    },
+    {
+      "text": "asda",
+      "sender": "8Vr_gQl4EfRtN-iAAAAC",
+      "id": 3
+    },
+    {
+      "text": "test",
+      "sender": "8Vr_gQl4EfRtN-iAAAAC",
+      "id": 4
+    },
+    {
+      "text": "asda",
+      "sender": "8Vr_gQl4EfRtN-iAAAAC",
+      "id": 5
+    },
+    {
+      "text": "asd",
+      "sender": "8Vr_gQl4EfRtN-iAAAAC",
+      "id": 6
+    }
+  ]
+}

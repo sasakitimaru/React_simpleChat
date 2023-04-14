@@ -53,3 +53,39 @@
   margin-left: 1rem;
   cursor: pointer;
 }
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  /* width: 200px; */
+  height: 100%;
+  background-color: #496598;
+  padding: 20px;
+}
+
+.sidebarItem {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sidebarItem:hover {
+  background-color: #f0f0f0;
+}
+
+.hamburgerMenu {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Other styles remain the same */
